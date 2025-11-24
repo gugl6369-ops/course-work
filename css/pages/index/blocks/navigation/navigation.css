@@ -1,0 +1,31 @@
+.navigation{
+    display: flex;
+}
+.navigation_icon{
+    width: 50px;
+    height: 74px;
+    cursor: pointer;
+}
+.navigation_back{
+    border-radius: 12px 0 0 12px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.navigation_block-icon{
+    padding: 8px 15px 8px 25px;
+}
+.navigation_back--white{
+    background-color: var(--white);
+    z-index: 1;
+}
+.navigation_back--blue{
+    background-color: var(--lightBlue);
+    grid-column: 2/4;
+    z-index: 2;
+}
+.navigation_back--green{    
+    background-color: var(--darkGreen);
+    padding-right: 185px;
+    z-index: 3;
+}

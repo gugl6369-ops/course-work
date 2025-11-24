@@ -1,0 +1,14 @@
+@import url('./fonts/fonts.css');
+@import url('./base/base.css');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,14 @@
+.advantages {
+    width: 100%;
+    background-color: var(--lightBlue);
+}
+
+.advantages_card{
+    display: grid;
+    padding: 8px;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid white;
+}
+.advantages_content{
+
+}
