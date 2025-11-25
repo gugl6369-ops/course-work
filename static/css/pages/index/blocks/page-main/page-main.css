@@ -23,13 +23,15 @@
     gap: 60px;
 }
 .page-main_title{
+    font-family: 'Kablammo';
     font-size: 135px ;
     color: var(--darkGreen);
 }
 .page-main_subtitle{
+    font-family: 'Kurule';
     line-height: 35px;
     font-size: 32px;
-    color: var(--darkGreen);
+    color: var(--black);
 }
 .page-main_btn-block{
     display: flex;
@@ -121,9 +123,7 @@
     padding-bottom: 30px;
     justify-content: space-between;
 }
-.page-main_tags{
 
-}
 .page-main_tag-list{
     display: flex;
     align-items: center;
@@ -136,6 +136,7 @@
 }
 
 .page-main_tag-title{
+    font-family: 'Kurule';
     white-space: nowrap;
     color: var(--lightGreen);
     font-size: 24px;
@@ -155,6 +156,7 @@
     gap: 10px;
 }
 .page-main_lang-selector{
+    font-family: 'Kurule';
     font-size: 2rem;
     color: var(--darkGreen);
 }
@@ -170,14 +172,22 @@
     width: 100%;
     padding: 20px 100px;
     background-color: rgba(170, 213, 221, 0.3);
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+}
+.page-main_word-list{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
 }
 .page-main_word {
+    font-family: 'Kablammo';
     font-size: 32px;
     color: var(--lightGreen);
 }
 .page-main_word--accent{
+    font-family: 'Kablammo';
     color: var(--darkGreen);
     font-size: 4rem;
 }

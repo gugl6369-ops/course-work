@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "Kurule";
+    src: url("../../fonts/kurale/Kurale-Regular.woff2")
+         url("../../fonts/kurale/Kurale-Regular.otf"),
+         url("../../fonts/kurale/Kurale-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Kablammo";
+    src: url("../../fonts/kablammo/Kablammo-Regular-VariableFont_MORF.woff2"),
+         url("../../fonts/kablammo/Kablammo-Regular-VariableFont_MORF.ttf"),
+         url("../../fonts/kablammo/Kablammo-Regular-VariableFont_MORF.otf");
+}

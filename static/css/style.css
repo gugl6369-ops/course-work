@@ -1,5 +1,5 @@
-@import url('./fonts/fonts.css');
 @import url('./base/base.css');
+@import url('./fonts/fonts.css');
 
 *{
     padding: 0;
