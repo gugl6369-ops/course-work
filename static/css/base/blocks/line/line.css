@@ -1,0 +1,30 @@
+.line_word-block{
+    display: flex;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: rgba(170, 213, 221, 0.3);
+    align-items: center;
+    justify-content: center;
+}
+.line_word-list{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.line_word {
+    font-family: 'Kablammo';
+    font-size: 2rem;
+    color: var(--lightGreen);
+}
+.line_word--accent{
+    font-family: 'Kablammo';
+    color: var(--darkGreen);
+    font-size: 4rem;
+}
+.line_word-block--blue{
+    background-color: rgba(161, 181, 167, 0.12);
+}
+.line_word--blue{
+    color: rgba(188, 219, 225, 1);
+}

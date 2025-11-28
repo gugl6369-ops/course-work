@@ -1,12 +1,14 @@
 .advantages{
     padding: 60px 0;
     width: 100%;
+    position: relative;
 }
 .advantages_content{
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    position: relative;
 }
 
 .advantages_cards--blue{
@@ -14,4 +16,88 @@
 }
 .advantages_card{
     padding: 8px;
+    width: 80%;
+}
+.advantages_card-img--right{
+    justify-self: flex-end;
+}
+.advantages_cards{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 90px;
+    padding: 90px 40px 90px 0;
+    align-items: flex-end;
+}
+.advantages_cards--revers{
+    align-items: flex-start;
+    padding: 90px  0 90px 40px;
+}
+
+.advantages_card-text{
+    font-family: "Kurale";
+    font-size: 2rem;
+    color: var(--white);
+    max-width: 300px;
+    display: inline-block;
+    text-align: center;
+}
+
+.advantages_card{
+    border: 1px solid var(--white);
+    border-radius: 13px;
+    padding: 100px 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.advantages_card--green{
+    border-color: var(--darkGreen);
+}
+.advantages_card-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+.advantages_card-text--green{
+    color: var(--darkGreen);
+}
+
+.advantages_content::after{
+    content: '';
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    background-image: url('../../../../../pic/index/advantages/castle.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    z-index: -1;
+
+}
+
+.advantages::after{
+    content: 'Эльфийский';
+    position: absolute;
+    font-family: 'Kablammo';
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 112px;
+    transform: rotate(-90deg);
+    top: 43%;
+    left: -10%;
+}
+.advantages::before{
+    content: 'росник';
+    position: absolute;
+    top: 0;
+    font-family: 'Kablammo';
+    color: rgba(30, 63, 58, 0.4);
+    font-size: 112px;
+    transform: rotate(-270deg);
+    top: 43%;
+    right: -2%;
 }

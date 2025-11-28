@@ -1,0 +1,73 @@
+.book{
+    padding: 110px 0;
+    display: flex;
+    justify-content: center;
+}
+.book_content{
+    position: relative;
+    background-color: var(--darkGreen);
+    border-radius: 10px;
+    padding: 25px 11px 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 30px;
+    box-shadow: 0 20px 20px 0 rgba(36, 44, 29, 0.4);
+}
+.book_plant-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:10px;
+}
+.book_plant{
+    background-color: rgba(255, 253, 250, 1);
+    display: flex;
+    padding: 40px 30px;
+    border-radius: 10px;
+}
+
+.book_plant-title{
+    max-width: 320px;
+    font-family: 'Kablammo';
+    font-size: 2rem;
+    color: var(--darkGreen);
+}
+.book_plant-text{
+    font-family: 'Kurale';
+    font-size: 1.7rem;
+    color: var(--black)
+}
+.book_plant-text--grey{
+    color: rgba(0, 0, 0, 0.6);
+}
+.book_description{
+    display: flex;
+    background-color: rgba(255, 253, 250, 1);
+    border-radius: 10px;
+    padding: 40px 120px 40px 30px;
+}
+.book_description-block{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.book_description-text{
+    max-width: 700px;
+    padding-left: 150px;
+    font-family: 'Kurale';
+    font-size: 1.7rem;
+    color: var(--black);
+    line-height: 37px;
+}
+.book_description::before{
+    content: '';
+    background-color: rgba(168, 57, 62, 1);
+    position: absolute;
+    height: 100%;
+    width: 50px;
+    top: 24px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.25);
+}

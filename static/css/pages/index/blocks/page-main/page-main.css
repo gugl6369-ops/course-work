@@ -118,7 +118,6 @@
 .page-main_footer{
     display: flex;
     align-items: center;
-    width: 100%;
     padding-top: 10px;
     padding-bottom: 30px;
     justify-content: space-between;
@@ -167,27 +166,3 @@
     opacity: 0.9;
 }
 
-.page-main_word-block{
-    display: flex;
-    width: 100%;
-    padding: 20px 100px;
-    background-color: rgba(170, 213, 221, 0.3);
-    align-items: center;
-    justify-content: center;
-}
-.page-main_word-list{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-}
-.page-main_word {
-    font-family: 'Kablammo';
-    font-size: 32px;
-    color: var(--lightGreen);
-}
-.page-main_word--accent{
-    font-family: 'Kablammo';
-    color: var(--darkGreen);
-    font-size: 4rem;
-}
