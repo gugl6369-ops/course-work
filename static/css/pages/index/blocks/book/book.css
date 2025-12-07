@@ -73,3 +73,29 @@
     border-radius: 0 0 10px 10px;
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.25);
 }
+
+@media (max-width: 1750px) {
+    .book_content{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 850px) {
+    .book_description::before {
+        display: none;
+    }
+    .book_plant{
+        flex-direction: column;
+    }
+    .book_plant-img{
+        max-height: 700px;
+    }
+    .book_description{
+        padding: 40px 30px;
+    }
+    .book_description-text{
+        padding: 0;
+        line-height: normal;
+    }
+}

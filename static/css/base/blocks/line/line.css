@@ -28,3 +28,26 @@
 .line_word--blue{
     color: rgba(188, 219, 225, 1);
 }
+
+@media (max-width: 1350px) {
+    .line_word {
+        font-size: 1.5rem;
+    }
+    .line_word--accent{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 1350px) {
+    .line_word {
+        font-size: 1rem;
+    }
+    .line_word--accent{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 1350px) {
+    .line_word-block{
+        display: none;
+    }
+}

@@ -101,3 +101,37 @@
     top: 43%;
     right: -2%;
 }
+
+@media (max-width: 1300px) {
+    .advantages_content{
+        grid-template-columns: 1fr;
+    }
+    .advantages_cards{
+        align-items: center;
+    }
+    .advantages::before{
+        display: none;
+    }
+    .advantages::after{
+        display: none;
+    }
+    .advantages_content::after{
+        display: none;    
+    }
+}
+@media (max-width: 750px) {
+    .advantages_card{
+        border: none;
+        padding: 10px;
+    }
+    .advantages_card-content{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .advantages_card-content--right{
+        flex-direction: column-reverse;
+
+    }
+    
+}

@@ -1,4 +1,5 @@
 .page-main {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,13 +25,13 @@
 }
 .page-main_title{
     font-family: 'Kablammo';
-    font-size: 135px ;
+    font-size: 8.4rem;
     color: var(--darkGreen);
 }
 .page-main_subtitle{
     font-family: 'Kurule';
     line-height: 35px;
-    font-size: 32px;
+    font-size: 2rem;
     color: var(--black);
 }
 .page-main_btn-block{
@@ -41,7 +42,7 @@
 .page-main_btn-title{
     padding-left: 26px;
     color: var(--white);
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 .page-main_arrow-block{
     display: flex;
@@ -87,7 +88,7 @@
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.4);
     color: var(--darkGreen);
-    font-size: 32px;
+    font-size: 2rem;
     display: flex;
     justify-content: center;
     width: 80%;
@@ -130,6 +131,73 @@
     font-family: 'Kurule';
     white-space: nowrap;
     color: var(--lightGreen);
-    font-size: 24px;
+    font-size: 1.5rem;
+}
+.page-main_decor{
+    top: -20%;
+    left: -5%;
+    z-index: -1;
+    position: absolute;
+    width: 650px;
+    height: 650px;
+    border-radius: 100%;
+    background-color: rgba(161, 181, 167, 0.31);
+    filter: blur(100px);
 }
 
+
+@media (max-width: 1700px ) {
+    .page-main_cover{
+        display: none;
+    }
+    .page-main_footer{
+        justify-content: end;
+    }
+    .page-main_tag-list{
+        display: none;    
+    }
+    
+}
+@media (max-width: 1100px ) {
+    .page-main_title{
+        font-size: 6rem;
+    }
+    .page-main{
+        display: flex;
+    }
+    .page-main-block{
+        width: 100%;
+        display: flex;
+    }
+    .btn--right-padding{
+        max-width: none;
+    }
+    .footer_logo{
+        width: 100px;
+        height: 100px;
+    }
+    .footer_logo-icon{
+        width: 100px;
+        height: 100px;
+    }
+    
+}
+
+@media (max-width: 700px ) {
+    html{
+        font-size: 10px;
+    }
+    .page-main{
+        padding: 30px;
+    }
+}
+
+@media (max-width: 460px ) {
+    html{
+        font-size: 8px;
+    }
+    .footer_social-block{
+        padding: 5px;
+    }
+    
+}

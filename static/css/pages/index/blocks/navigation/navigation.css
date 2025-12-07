@@ -29,3 +29,23 @@
     padding-right: 185px;
     z-index: 3;
 }
+.navigation_block-menu{
+    display: none;
+}
+@media (max-width: 900px) {
+    .navigation_block-menu{
+        display: flex;
+        align-items: center;
+        justify-content: center ;
+        padding-right: 20px;
+
+        cursor: pointer;
+    }
+    .navigation_menu{
+        height: 74px;
+        width: 62px;
+    }
+    .navigation_back{
+        display: none;
+    }
+}
