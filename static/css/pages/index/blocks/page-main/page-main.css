@@ -140,29 +140,4 @@
     color: var(--lightGreen);
     font-size: 24px;
 }
-.page-main_lang{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.mage-main_lang-block{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 24px;
-    border-radius: 20px;
-    border: 2px solid var(--darkGreen);
-    gap: 10px;
-}
-.page-main_lang-selector{
-    font-family: 'Kurule';
-    font-size: 2rem;
-    color: var(--darkGreen);
-}
-.page-main_lang-arrow{
-    display: inline-block;
-    border: 15px solid transparent;
-    border-bottom: 15px solid rgba(0, 0, 0, 0.6);
-    opacity: 0.9;
-}
 
