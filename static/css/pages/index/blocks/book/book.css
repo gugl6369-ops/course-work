@@ -1,10 +1,12 @@
 .book{
+    width: 100%;
     padding: 110px 0;
     display: flex;
     justify-content: center;
 }
 .book_content{
     position: relative;
+    max-width: 80%;
     background-color: var(--darkGreen);
     border-radius: 10px;
     padding: 25px 11px 60px;
