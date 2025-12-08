@@ -21,6 +21,7 @@
 .account-hat_quote-title{
     font-family: 'Kurale';
     font-size: 1.5rem;
+    font-weight: normal;
 }
 .account-hat_user{
     grid-area: 1 / 6 / 2 / 9;
@@ -78,3 +79,4 @@
     height: 60px;
     cursor: pointer;
 }
+

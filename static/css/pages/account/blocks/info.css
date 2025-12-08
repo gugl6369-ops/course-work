@@ -52,6 +52,7 @@
     font-size: 1.5rem;
 }
 .info_card-block{
+    height: 100%;
     background-color: rgba(246, 246, 246, 1);
     border-radius: 10px;
     padding: 20px;
@@ -91,7 +92,7 @@
 .info_card-text{
     font-family: 'Kurale';
     color: var(--white);
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .info_card-tag--flower{
     background-color: var(--tagFlower);
@@ -123,4 +124,49 @@
 }
 .info_block-img{
     height: 80%;
+    width: 100%;
+}
+
+@media (max-width: 1400px) {
+    .info_card-tag{
+        padding: 5px;
+    }
+}
+@media (max-width: 1200px) {
+    .info_card-list{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr;
+    }
+    .info_block-img{
+        height: 50%;
+    }
+}
+@media (max-width: 1000px) {
+    .info{
+        display: flex;
+        flex-direction: column;
+    }
+    .account-hat {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 800px) {
+    .info_active{
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .info_active-content{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .info_active-rating{
+        width: 100px;
+        height: 100px;
+    }
+    html{
+        font-size: 10px;
+    }
 }
