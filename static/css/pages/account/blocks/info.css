@@ -1,0 +1,126 @@
+.info{
+    padding: 70px 0;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); 
+    gap: 40px;
+}
+.info_content{
+    grid-area: 1 / 1 / 2 / 8; 
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+.info_active{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info_active-content{
+    padding: 20px 80px;
+    width: 80%;
+    display: flex;
+    justify-content:space-around;
+    background-color: rgba(246, 246, 246, 1);
+    border-radius: 10px;
+}
+.info_active-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info_active-rating{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/static/pic/account/info/cor.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 120px;
+    height: 100%;
+}
+.info_active-count{
+    font-family: 'Kurale';
+    font-size: 1.5rem;
+}
+.info_active-title{
+    font-family: 'Kurale';
+    font-size: 1.5rem;
+}
+.info_card-block{
+    background-color: rgba(246, 246, 246, 1);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.info_card-block-title{
+    font-family: 'Kurale';
+    font-size: 2.7rem;
+    font-weight: normal;
+}
+.info_card-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.info_card{
+    border: 1px solid var(--darkGreen);
+    border-radius: 20px;
+    background-color: var(--white);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info_card-tag{
+    position: absolute;
+    padding: 2px 20px;
+
+    top: 20px;
+    left: 0;
+}
+.info_card-img{
+    width: 100%;
+}
+.info_card-text{
+    font-family: 'Kurale';
+    color: var(--white);
+    font-size: 2rem;
+}
+.info_card-tag--flower{
+    background-color: var(--tagFlower);
+}
+.info_card-tag--grass{
+    background-color: var(--tagGrass);
+}
+.info_card-tag--mushroom{
+    background-color: var(--tagMushroom);
+}
+.info_card-tag--collection{
+    background-color: var(--tagCollection);
+}
+
+.info_block{
+    grid-area: 1 / 8 / 2 / 13; 
+    background-color: rgba(246, 246, 246, 1);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info_block-title{
+    font-family: 'Kurale';
+    font-weight: normal;
+    font-size: 2.7rem;
+}
+.info_block-img{
+    height: 80%;
+}

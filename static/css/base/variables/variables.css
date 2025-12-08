@@ -2,6 +2,12 @@
     --black: rgba(0, 0, 0, 1);
     --white: rgba(255, 255, 255, 1);
     --darkGreen:  rgba(30, 63, 58, 1);
-    --lightGreen: rgba(161, 181, 167, 1);
+    --lightGreen: rgba(161, 181, 167, 1); 
     --lightBlue: rgba(173, 214, 222, 1);
+
+    --tagFlower: rgba(154, 148, 188, 1);
+    --tagCollection: rgba(255, 154, 154, 1);
+    --tagMushroom: rgba(125, 95, 95, 1);
+    --tagGrass: rgba(179, 226, 232, 1);
+    
 }

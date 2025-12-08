@@ -3,30 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/css/style.css">
-    <link rel="stylesheet" href="static/css/pages/index/blocks/blocks.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/pages/index/blocks/blocks.css">
     <title>Эльфийский росник</title>
 </head>
 <body>
     <header class="header">
         <div class="header_block-logo">
-            <img class="header_logo" src="static/pic/index/header/logo.svg" alt="Логотип">
+            <img class="header_logo" src="/static/pic/base/header/logo.svg" alt="Логотип">
         </div>
         <nav class="navigation">
             <div class="navigation_block-menu">
-                <img class="navigation_menu" src="static/pic/index/header/menu.png">
+                <img class="navigation_menu" src="/static/pic/base/header/menu.png">
             </div>
             <div class="navigation_back navigation_back--white">
                 <div class="navigation_block-icon">
-                    <img class="navigation_icon" src="static/pic/index/navigation/search.svg" alt="Поиск">
+                    <a href="search.html"><img class="navigation_icon" src="/static/pic/base/navigation/search.svg" alt="Поиск"></a>
                 </div>
                 <div class="navigation_back navigation_back--blue">
                     <div class="navigation_block-icon">
-                        <img class="navigation_icon" src="static/pic/index/navigation/favorites.svg" alt="Избранное">
+                        <a  href="d.html"><img class="navigation_icon" src="/static/pic/base/navigation/favorites.svg" alt="Избранное"></a>
                     </div>
                     <div class="navigation_back navigation_back--green">
                         <div class="navigation_block-icon">
-                            <img class="navigation_icon" src="static/pic/index/navigation/account.png" alt="Аккаунт">
+                            <a href="account.html"><img class="navigation_icon" src="/static/pic/base/navigation/account.png" alt="Аккаунт"></a>
                         </div>
                     </div>
                 </div>
@@ -49,7 +49,7 @@
                             <button class="btn btn--right-padding">
                                 Перейти на главную
                                 <div class="page-main_arrow-block">
-                                    <img class="page-main_arrow" src="static/pic/index/page-main/arrow.svg" alt="Стрелка">
+                                    <img class="page-main_arrow" src="/static/pic/index/page-main/arrow.svg" alt="Стрелка">
                                 </div>
                             </button>
                         </div>
@@ -57,7 +57,7 @@
                     <div class="page-main_cover">
                         <div class="page-main_cover-back">
                             <div class="page-main_cover-block">
-                                <img class="page-main_cover-plant" src="static/pic/index/page-main/plant.png" alt="растение">
+                                <img class="page-main_cover-plant" src="/static/pic/index/page-main/plant.png" alt="растение">
                                 <div class="page-main_cover-decor"></div>
                                 <a class="page-main_cover-btn" href="#">Перейти на страницу..</a>
                             </div>
@@ -108,13 +108,13 @@
                 <div class="advantages_cards advantages_cards--blue ">
                     <div class="advantages_card">
                         <div class="advantages_card-content">
-                            <img class="advantages_card-img" src="static/pic/index/advantages/icon.svg" />
+                            <img class="advantages_card-img" src="/static/pic/index/advantages/icon.svg" />
                             <p class="advantages_card-text">Создавайте свои сборы и чаи</p>
                         </div>
                     </div>
                     <div class="advantages_card">
                         <div class="advantages_card-content">
-                            <img class="advantages_card-img" src="static/pic/index/advantages/icon-flower.svg" />
+                            <img class="advantages_card-img" src="/static/pic/index/advantages/icon-flower.svg" />
                             <p class="advantages_card-text">Ознакамливайтесь с миром трав удобно</p>
                         </div>
                     </div>
@@ -123,13 +123,13 @@
                     <div class="advantages_card advantages_card--green">
                         <div class="advantages_card-content advantages_card-content--right">
                             <p class="advantages_card-text advantages_card-text--green">Сохраняйте травы и сборы</p>
-                            <img class="advantages_card-img advantages_card-img--right" src="static/pic/index/advantages/icon-grass.svg" />
+                            <img class="advantages_card-img advantages_card-img--right" src="/static/pic/index/advantages/icon-grass.svg" />
                         </div>
                     </div>
                     <div class="advantages_card advantages_card--green">
                         <div class="advantages_card-content advantages_card-content--right">
                             <p class="advantages_card-text advantages_card-text--green">Вдохновляйтесь сборами других людей</p>
-                            <img class="advantages_card-img advantages_card-img--right" src="static/pic/index/advantages/icon-human.svg" />
+                            <img class="advantages_card-img advantages_card-img--right" src="/static/pic/index/advantages/icon-human.svg" />
                         </div>
                     </div>
                 </div>
@@ -149,7 +149,7 @@
         <section class="book wrapper">
             <div class="book_content">
                 <div class="book_plant">
-                    <img class="book_plant-img" src="static/pic/index/book/plant.png" alt="">
+                    <img class="book_plant-img" src="/static/pic/index/book/plant.png" alt="">
                     <div class="book_plant-content">
                         <h2 class="book_plant-title">Полынь обыкновенная</h2>
                         <div class="book_text-block">
@@ -194,13 +194,14 @@
             </div>
         </section>
         <section class="map wrapper">
-            <img class="map_img" src="static/pic/index/cart/cart.png" alt="карта">
+            <img class="map_img" src="/static/pic/index/cart/cart.png" alt="карта">
         </section>
-        <footer class="footer wrapper">
+    </main>
+        <footer class="footer">
             <div class="footer_container ">
-                <div class="footer_content">
+                <div class="footer_content wrapper">
                     <a href="/" class="footer_logo">
-                        <img class="footer_logo-icon" src="static/pic/index/footer/logo.svg" alt="логотип">
+                        <img class="footer_logo-icon" src="/static/pic/index/footer/logo.svg" alt="логотип">
                     </a>
                     <div class="footer_content-text">
                         <h3 class="footer_content-title">Справка</h3>
@@ -228,13 +229,13 @@
                         </div>
                         <div class="footer_social">
                             <div class="footer_social-block">
-                                <img class="footer_social-icon" src="static/pic/index/footer/icon-vkontakte.svg" alt="" />
+                                <img class="footer_social-icon" src="/static/pic/base/footer/icon-vkontakte.svg" alt="вконтакте" />
                             </div>
                             <div class="footer_social-block">
-                                <img class="footer_social-icon" src="static/pic/index/footer/icon-pinterest.svg" alt="" />
+                                <img class="footer_social-icon" src="/static/pic/base/footer/icon-pinterest.svg" alt="пинтерест" />
                             </div>
                             <div class="footer_social-block">
-                                <img class="footer_social-icon" src="static/pic/index/footer/icon-OK.svg" alt="" />
+                                <img class="footer_social-icon" src="/static/pic/base/footer/icon-OK.svg" alt="одноклассники" />
                             </div>
                         </div>
                     </div>
@@ -251,10 +252,6 @@
             </div>
             <p class="footer_decor">Эльфийский росник</p>
         </footer>
-    </main>
-    <footer>
-
-    </footer>
-
+ 
 </body>
 </html>
