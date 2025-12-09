@@ -52,7 +52,7 @@
     font-size: 1.5rem;
 }
 .info_card-block{
-    height: 100%;
+
     background-color: rgba(246, 246, 246, 1);
     border-radius: 10px;
     padding: 20px;
@@ -124,7 +124,7 @@
 }
 .info_block-img{
     height: 80%;
-    width: 100%;
+ 
 }
 
 @media (max-width: 1400px) {
@@ -149,6 +149,12 @@
     .account-hat {
         display: flex;
         flex-direction: column;
+    }
+    .info_card-block{
+            height: 100%;
+    }
+    .info_block-img{
+        width: 100%;
     }
 }
 @media (max-width: 800px) {
