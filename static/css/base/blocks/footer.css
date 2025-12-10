@@ -143,4 +143,11 @@
     .footer_social-block{
         padding: 5px;
     }
+    .footer_company{
+        padding: 20px; 
+    }
+    .footer_politic{
+        padding: 10px 0;
+        gap: 20px;
+    }
 }

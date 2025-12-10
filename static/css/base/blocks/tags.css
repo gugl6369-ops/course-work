@@ -10,8 +10,17 @@
     border-radius: 20px;
     background-color: rgba(255, 255, 255, .3);
     cursor: pointer;
+    transition: .3s ease-in-out;
 }
-
+.tag:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 3px solid rgba(0, 0, 0, 0.6);
+}
+.tag:active{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 3px solid rgba(0, 0, 0, 0.6);
+    color: var(--white);
+}
 .tag--active{
     background-color: rgba(193, 220, 201, 1);
     border: 3px solid rgba(161, 181, 167, 1);
@@ -21,7 +30,7 @@
     position: relative;
     background-color: rgba(217, 151, 151, 0.4);
     border: 3px solid rgba(236, 137, 137, 1);
-    color: var(--black);
+    color: rgb(211, 50, 50);
 }
 .tag--deactive::before{
     content: '';
@@ -35,4 +44,22 @@
 .tag--green{
     color: var(--lightGreen);
     border: 1px solid var(--lightGreen);
+}
+
+.tag--green:hover{
+    background-color: var(--lightGreen);
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+.tag--active:hover{
+    background-color: rgb(236, 255, 242);
+    border: 3px solid rgba(161, 181, 167, 1);
+    color: rgb(48, 98, 90);
+    box-shadow: 0 5px 15px rgb(236, 255, 242);
+    color: var(--black);
+}
+.tag--deactive:hover{
+    background-color: rgba(217, 151, 151, 0.178);
+    border: 3px solid rgba(236, 137, 137, 1);
+    color: var(--black);
 }

@@ -57,6 +57,7 @@
     font-size: 1.3rem;
 }
 .card_favorite{
+    position: relative;
     cursor: pointer;
     background-image: url('/static/pic/base/card/favorite.svg');
     background-position: center;
@@ -64,6 +65,27 @@
     background-repeat: no-repeat;
     width: 50px;
     height: 50px;
+}
+.card_favorite::before{
+    display: flex;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../pic/base/card/love.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 2;
+    opacity: 0;
+    transition: .2s ease-in-out;
+} 
+.card_favorite:hover::before{
+    opacity: .6;
+}
+.card_favorite:active::before{
+    display: flex;
+    opacity: 1;
 }
 .card_info{
     padding: 30px 0;

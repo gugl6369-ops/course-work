@@ -22,11 +22,17 @@
     align-items: center;
     padding: 10px;
     background-color: var(--white);
+    transition: .3s ease-in-out;
+}
+.catalog_button:hover{
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);;
+}
+.catalog_button:active{
+    background-color: var(--lightBlue);   
 }
 .catalog_button--active{
     background-color: var(--lightBlue);   
 }
-
 .catalog_content{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -47,8 +53,11 @@
     width: 90px;
     height: 90px;
     cursor: pointer;
+    transition: .3s ease-in-out;
 }
-
+.catalog_pagination-icon:hover{
+    opacity: .6;
+}
 @media (max-width: 1750px) {
     .catalog_content{
         grid-template-columns: 1fr;
