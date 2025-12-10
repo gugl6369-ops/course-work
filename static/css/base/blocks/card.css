@@ -1,0 +1,150 @@
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--darkGreen);
+    border-radius: 20px;
+    box-shadow: 0 4px 15px 5px rgba(0, 0, 0, 0.25);
+    background: #fff;
+    padding: 40px 30px;
+    gap: 30px;
+    justify-content: space-between;
+}
+.card_content{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+}
+.card_content-main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card_img{
+    max-width: 300px;
+    max-height: 380px;
+    z-index: 2;
+    align-self: center;
+}
+.card_content-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card_title{
+    font-family: 'Kablammo';
+    font-size: 3rem;
+    color: var(--darkGreen);
+    z-index: 2;
+}
+.card_rating-block{
+    display: flex;
+    gap: 10px;
+}
+.card_rating-icon{
+    width: 30px;
+    height: 30px;
+}
+.card_rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card_rating-text{
+    color: rgba(0, 0, 0, 0.6);
+    font-family: 'Kurale';
+    font-size: 1.3rem;
+}
+.card_favorite{
+    cursor: pointer;
+    background-image: url('/static/pic/base/card/favorite.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+.card_info{
+    padding: 30px 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.card_info-title{
+    font-family: 'Kurale';
+    font-size: 1.3rem;
+    color: var(--black);
+    font-weight: 400;
+}
+.card_info-text{
+     font-family: 'Kurale';
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 400;
+}
+.card_footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card_dop{
+    width: 50px;
+    height: 15px;
+}
+.card_category{
+    position: absolute;
+    padding: 3px 30px;
+    left: 0;
+}
+.card_category-title{
+    font-family: 'Kurale';
+    font-size: 1.7rem;
+    color: var(--white);
+}
+.card_category--grass{
+    background-color: var(--tagGrass);
+}
+.card_category--flower{
+    background-color: var(--tagFlower);
+}
+.card_category--mushroom{
+    background-color: var(--tagMushroom);
+}
+.card_category--collection{
+    background-color: var(--tagCollection);
+}
+.card_content-main::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 10px 10px 0 0;
+    background: radial-gradient(
+        41.36% 50% at 50% 50%,
+        #cfedf0 0%, 
+        rgba(119, 136, 138, 0) 100%
+    );
+}
+
+@media (max-width: 1000px) {
+    .card_content{
+        display: flex;
+        flex-direction: column;
+    }
+    .card_footer{
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .card{
+        padding: 10px;
+    }
+    .card_info{
+        display: none;
+    }
+}

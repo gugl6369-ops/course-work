@@ -1,0 +1,46 @@
+.header--transparent{
+    background: rgba(238, 243, 244, 1);
+}
+.header_search{
+    display: flex;
+    width: 100%;
+    padding: 0 90px;
+    gap: 10px;
+}
+.header_search-label{
+    display: flex;
+    width: 100%;
+    max-width: 70%;
+    box-shadow: inset 0 1px 5px 2px rgba(0, 0, 0, 0.25);
+    background: #fff;
+    border-radius: 10px;
+    padding: 7px 24px;
+}
+.header_search-input{
+    width: 100%;
+    outline: none;
+    border: none;
+    font-family: 'Kurale';
+    font-family: 1.5rem;
+}
+.header_search-input:active{
+    outline: none;
+}
+.header_search-btn{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .header_search-label{
+
+    }
+    .header_search-btn{
+        display: none;
+    }
+    .header_search{
+        padding: 10px;
+    }
+}
+

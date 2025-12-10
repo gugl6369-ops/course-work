@@ -3,9 +3,531 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/pages/search/blocks.css">
     <title>Поиск</title>
 </head>
 <body>
-    
+     <header class="header header--transparent">
+        <div class="header_block-logo">
+            <a href="index.html"><img class="header_logo" src="/static/pic/base/header/logo.svg" alt="Логотип"></a>
+        </div>
+        <div class="header_search">
+            <label class="header_search-label">
+                <input class="header_search-input" />
+            </label>
+            <button type="button" class="header_search-btn"><img src="/static/pic/search/header/search.svg"></button>
+        </div>
+        <nav class="navigation">
+            <div class="navigation_block-menu">
+                <img class="navigation_menu" src="/static/pic/base/header/menu.png">
+            </div>
+                <div class="navigation_back navigation_back--blue">
+                    <div class="navigation_block-icon">
+                        <a  href="d.html"><img class="navigation_icon" src="/static/pic/base/navigation/favorites.svg" alt="Избранное"></a>
+                    </div>
+                    <div class="navigation_back navigation_back--green">
+                        <div class="navigation_block-icon">
+                            <a href="account.html"><img class="navigation_icon" src="/static/pic/base/navigation/account.png" alt="Аккаунт"></a>
+                        </div>
+                    </div>
+                </div>
+        </nav>
+    </header>
+    <section class="search-help">
+        <div class="search-help_container wrapper">
+            <div class="search-help_tags">
+                <div class="search-help_tag-list">
+                    <div class="tag tag--active">
+                        <p>Кокосик</p>
+                    </div>
+                    <div class="tag tag--active">
+                        <p>Лилия</p>
+                    </div>
+                    <div class="tag tag--active">
+                        <p>Лилия</p>
+                    </div>
+                    <div class="tag tag--active">
+                        <p>Лилия</p>
+                    </div>
+                    <div class="tag tag--active">
+                        <p>Лилия</p>
+                    </div>
+                </div>
+                <div class="search-help_tag-list">
+                    <div class="tag tag--deactive">
+                        <p>Лилия</p>
+                    </div>
+                    <div class="tag tag--deactive">
+                        <p>Лилия</p>
+                    </div>
+                </div>
+            </div>
+            <div class="search-help_addition">
+                <h2 class="search-help_addition-title">Связанное</h2>
+                <div class="search-help_tag-list">
+                    <div class="tag">
+                        <p>Лилия</p>
+                    </div>
+                    <div class="tag">
+                        <p>Лилия</p>
+                    </div>
+                    <div class="tag">
+                        <p>Лилия</p>
+                    </div>
+                    <div class="tag">
+                        <p>Лилия</p>
+                    </div>
+                    <div class="tag">
+                        <p>Лилия</p>
+                    </div>
+                    <div class="tag">
+                        <p>Лилия</p>
+                    </div>
+                    <button type="button" class="search-help_change-block">
+                        <img class="search-help_change-icon" src="/static/pic/search/search-help/change.svg" alt="Изменить" />
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main class="main">
+        <section class="catalog wrapper">
+            <div class="catalog_header">
+                <div class="lang">
+                    <div class="lang_block">
+                        <p class="lang_selector">RU</p>
+                        <div class="lang_arrow"></div>
+                    </div>
+                </div>
+                <div class="catalog_button-block">
+                    <button class="catalog_button" >
+                        <img class="catalog_button-icon" src="/static/pic/base/catalog/icon-amount-one.svg" alt="отображение по одному" />
+                    </button>
+                    <button class="catalog_button catalog_button--active">
+                        <img class="catalog_button-icon" src="/static/pic/base/catalog/icon-amount-two.svg" alt="отображение по два" /> 
+                    </button>
+                </div>
+            </div>
+            <div class="catalog_content">
+                <article class="card">
+                    <div class="card_content">
+                        <div class="card_content-main">
+                            <img class="card_img" src="/static/pic/base/card/grass.png" alt="">
+                            <h3 class="card_title">Полынь</h3>
+                        </div>
+                        <div class="card_content-text">
+                            <div class="card_rating">
+                                <div class="card_rating-block">
+                                    <img class="card_rating-icon" src="/static/pic/base/card/comments.svg" alt="комментарии">
+                                    <p class="card_rating-text">503</p>
+                                </div>
+                                <div class="card_rating-block">
+                                    <img class="card_rating-icon" src="/static/pic/base/card/views.svg" alt="просмотры">
+                                    <p class="card_rating-text">64.005</p>
+                                </div>
+                                <div class="card_favorite" ></div>
+                            </div>
+                            <div class="card_info">
+                                <div class="card_info-block">
+                                    <h4 class="card_info-title">Регионы распространения:</h4>
+                                    <p  class="card_info-text">
+                                        Европейская территория РФ, Кавказ,
+                                        Сибирь, Дальний Восток
+                                    </p>
+                                </div>
+                                <div class="card_info-block">
+                                    <h4 class="card_info-title">Культура:</h4>
+                                    <p class="card_info-text">
+                                        Кукуруза, Подсолнечник, Рапс, 
+                                        Сахарная свёкла, Картофель, Соя
+                                    </p>
+                                </div>
+                                <div class="card_info-block">
+                                    <h4 class="card_info-title">Противопоказания:</h4>
+                                    <p class="card_info-text">Аллергия, беременность</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_footer">
+                        <div class="tag tag--green">
+                            <p>Успокаивающее</p>
+                        </div>
+                        <div class="tag tag--green">
+                            <p>Россия</p>
+                        </div>
+                        <div class="tag tag--green">
+                            <p>Лечебное</p>
+                        </div>
+                        <div class="tag tag--green">
+                            <p>Зеленое</p>
+                        </div>
+                        <img class="card_dop" src="/static/pic/base/card/dop.svg" alt="">
+                    </div>
+                    <div class="card_category card_category--grass">
+                        <p class="card_category-title">Травы</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card_content">
+                        <div class="card_content-main">
+                            <img class="card_img" src="/static/pic/base/card/flover.png" alt="растение">
+                            <h3 class="card_title">Лилия</h3>
+                        </div>
+                        <div class="card_content-text">
+                            <div class="card_rating">
+                                <div class="card_rating-block">
+                                    <img class="card_rating-icon" src="/static/pic/base/card/comments.svg" alt="комментарии">
+                                    <p class="card_rating-text">245</p>
+                                </div>
+                                <div class="card_rating-block">
+                                    <img class="card_rating-icon" src="/static/pic/base/card/views.svg" alt="просмотры">
+                                    <p class="card_rating-text">5.675</p>
+                                </div>
+                                <div class="card_favorite"></div>
+                            </div>
+                            <div class="card_info">
+                                <div class="card_info-block">
+                                    <h4 class="card_info-title">Регионы распространения:</h4>
+                                    <p  class="card_info-text">
+                                        Европейская территория РФ, Кавказ,
+                                        Сибирь, Дальний Восток
+                                    </p>
+                                </div>
+                                <div class="card_info-block">
+                                    <h4 class="card_info-title">Культура:</h4>
+                                    <p class="card_info-text">
+                                        Кукуруза, Подсолнечник, Рапс, 
+                                        Сахарная свёкла, Картофель, Соя
+                                    </p>
+                                </div>
+                                <div class="card_info-block">
+                                    <h4 class="card_info-title">Противопоказания:</h4>
+                                    <p class="card_info-text">Аллергия, беременность</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_footer">
+                        <div class="tag tag--green">
+                            <p>Успокаивающее</p>
+                        </div>
+                        <div class="tag tag--green">
+                            <p>Россия</p>
+                        </div>
+                        <div class="tag tag--green">
+                            <p>Лечебное</p>
+                        </div>
+                        <div class="tag tag--green">
+                            <p>Зеленое</p>
+                        </div>
+                        <img class="card_dop" src="/static/pic/base/card/dop.svg" alt="">
+                    </div>
+                    <div class="card_category card_category--flower">
+                        <p class="card_category-title">Цветки</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card_content">
+                        <div class="card_content-main">
+                            <img class="card_img" src="/static/pic/base/card/mush.png" alt="">
+                            <h3 class="card_title">белый гриб</h3>
+                        </div>
+                        <div class="card_content-text">
+                            <div class="card_rating">
+                                <div class="card_rating-block">
+                                    <img class="card_rating-icon" src="/static/pic/base/card/comments.svg" alt="комментарии">
+                                    <p class="card_rating-text">45</p>
+                                </div>
+                                <div class="card_rating-block">
+                                    <img class="card_rating-icon" src="/static/pic/base/card/views.svg" alt="просмотры">
+                                    <p class="card_rating-text">6.005</p>
+                                </div>
+                                <div class="card_favorite" ></div>
+                            </div>
+                            <div class="card_info">
+                                <div class="card_info-block">
+                                    <h4 class="card_info-title">Регионы распространения:</h4>
+                                    <p  class="card_info-text">
+                                        Европейская территория РФ, Кавказ,
+                                        Сибирь, Дальний Восток
+                                    </p>
+                                </div>
+                                <div class="card_info-block">
+                                    <h4 class="card_info-title">Культура:</h4>
+                                    <p class="card_info-text">
+                                        Кукуруза, Подсолнечник, Рапс, 
+                                        Сахарная свёкла, Картофель, Соя
+                                    </p>
+                                </div>
+                                <div class="card_info-block">
+                                    <h4 class="card_info-title">Противопоказания:</h4>
+                                    <p class="card_info-text">Аллергия, беременность</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_footer">
+                        <div class="tag tag--green">
+                            <p>Успокаивающее</p>
+                        </div>
+                        <div class="tag tag--green">
+                            <p>Россия</p>
+                        </div>
+                        <div class="tag tag--green">
+                            <p>Лечебное</p>
+                        </div>
+                        <div class="tag tag--green">
+                            <p>Зеленое</p>
+                        </div>
+                        <img class="card_dop" src="/static/pic/base/card/dop.svg" alt="">
+                    </div>
+                    <div class="card_category card_category--mushroom">
+                        <p class="card_category-title">Грибы</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card_content">
+                        <div class="card_content-main">
+                            <img class="card_img" src="/static/pic/base/card/tea.png" alt="">
+                            <h3 class="card_title">Облачный чай</h3>
+                        </div>
+                        <div class="card_content-text">
+                            <div class="card_rating">
+                                <div class="card_rating-block">
+                                    <img class="card_rating-icon" src="/static/pic/base/card/comments.svg" alt="комментарии">
+                                    <p class="card_rating-text">553</p>
+                                </div>
+                                <div class="card_rating-block">
+                                    <img class="card_rating-icon" src="/static/pic/base/card/views.svg" alt="просмотры">
+                                    <p class="card_rating-text">23.656</p>
+                                </div>
+                                <div class="card_favorite" ></div>
+                            </div>
+                            <div class="card_info">
+                                <div class="card_info-block">
+                                    <h4 class="card_info-title">Регионы распространения:</h4>
+                                    <p  class="card_info-text">
+                                        Европейская территория РФ, Кавказ,
+                                        Сибирь, Дальний Восток
+                                    </p>
+                                </div>
+                                <div class="card_info-block">
+                                    <h4 class="card_info-title">Культура:</h4>
+                                    <p class="card_info-text">
+                                        Кукуруза, Подсолнечник, Рапс, 
+                                        Сахарная свёкла, Картофель, Соя
+                                    </p>
+                                </div>
+                                <div class="card_info-block">
+                                    <h4 class="card_info-title">Противопоказания:</h4>
+                                    <p class="card_info-text">Аллергия, беременность</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_footer">
+                        <div class="tag tag--green">
+                            <p>Успокаивающее</p>
+                        </div>
+                        <div class="tag tag--green">
+                            <p>Россия</p>
+                        </div>
+                        <div class="tag tag--green">
+                            <p>Лечебное</p>
+                        </div>
+                        <div class="tag tag--green">
+                            <p>Зеленое</p>
+                        </div>
+                        <img class="card_dop" src="/static/pic/base/card/dop.svg" alt="">
+                    </div>
+                    <div class="card_category card_category--collection">
+                        <p class="card_category-title">Чай</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card_content">
+                        <div class="card_content-main">
+                            <img class="card_img" src="/static/pic/base/card/grass.png" alt="">
+                            <h3 class="card_title">Полынь</h3>
+                        </div>
+                        <div class="card_content-text">
+                            <div class="card_rating">
+                                <div class="card_rating-block">
+                                    <img class="card_rating-icon" src="/static/pic/base/card/comments.svg" alt="комментарии">
+                                    <p class="card_rating-text">4</p>
+                                </div>
+                                <div class="card_rating-block">
+                                    <img class="card_rating-icon" src="/static/pic/base/card/views.svg" alt="просмотры">
+                                    <p class="card_rating-text">4.005</p>
+                                </div>
+                                <div class="card_favorite" ></div>
+                            </div>
+                            <div class="card_info">
+                                <div class="card_info-block">
+                                    <h4 class="card_info-title">Регионы распространения:</h4>
+                                    <p  class="card_info-text">
+                                        Европейская территория РФ, Кавказ,
+                                        Сибирь, Дальний Восток
+                                    </p>
+                                </div>
+                                <div class="card_info-block">
+                                    <h4 class="card_info-title">Культура:</h4>
+                                    <p class="card_info-text">
+                                        Кукуруза, Подсолнечник, Рапс, 
+                                        Сахарная свёкла, Картофель, Соя
+                                    </p>
+                                </div>
+                                <div class="card_info-block">
+                                    <h4 class="card_info-title">Противопоказания:</h4>
+                                    <p class="card_info-text">Аллергия, беременность</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_footer">
+                        <div class="tag tag--green">
+                            <p>Успокаивающее</p>
+                        </div>
+                        <div class="tag tag--green">
+                            <p>Россия</p>
+                        </div>
+                        <div class="tag tag--green">
+                            <p>Лечебное</p>
+                        </div>
+                        <div class="tag tag--green">
+                            <p>Зеленое</p>
+                        </div>
+                        <img class="card_dop" src="/static/pic/base/card/dop.svg" alt="">
+                    </div>
+                    <div class="card_category card_category--grass">
+                        <p class="card_category-title">Травы</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card_content">
+                        <div class="card_content-main">
+                            <img class="card_img" src="/static/pic/base/card/flover.png" alt="">
+                            <h3 class="card_title">Лилия</h3>
+                        </div>
+                        <div class="card_content-text">
+                            <div class="card_rating">
+                                <div class="card_rating-block">
+                                    <img class="card_rating-icon" src="/static/pic/base/card/comments.svg" alt="комментарии">
+                                    <p class="card_rating-text">235</p>
+                                </div>
+                                <div class="card_rating-block">
+                                    <img class="card_rating-icon" src="/static/pic/base/card/views.svg" alt="просмотры">
+                                    <p class="card_rating-text">67.405</p>
+                                </div>
+                                <div class="card_favorite"></div>
+                            </div>
+                            <div class="card_info">
+                                <div class="card_info-block">
+                                    <h4 class="card_info-title">Регионы распространения:</h4>
+                                    <p  class="card_info-text">
+                                        Европейская территория РФ, Кавказ,
+                                        Сибирь, Дальний Восток
+                                    </p>
+                                </div>
+                                <div class="card_info-block">
+                                    <h4 class="card_info-title">Культура:</h4>
+                                    <p class="card_info-text">
+                                        Кукуруза, Подсолнечник, Рапс, 
+                                        Сахарная свёкла, Картофель, Соя
+                                    </p>
+                                </div>
+                                <div class="card_info-block">
+                                    <h4 class="card_info-title">Противопоказания:</h4>
+                                    <p class="card_info-text">Аллергия, беременность</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_footer">
+                        <div class="tag tag--green">
+                            <p>Успокаивающее</p>
+                        </div>
+                        <div class="tag tag--green">
+                            <p>Россия</p>
+                        </div>
+                        <div class="tag tag--green">
+                            <p>Лечебное</p>
+                        </div>
+                        <div class="tag tag--green">
+                            <p>Зеленое</p>
+                        </div>
+                        <img class="card_dop" src="/static/pic/base/card/dop.svg" alt="">
+                    </div>
+                    <div class="card_category card_category--flower">
+                        <p class="card_category-title">Цветки</p>
+                    </div>
+                </article>
+                
+            </div>
+            <div class="catalog_pagination">
+                <div class="catalog_pagination-line"></div>
+                <img class="catalog_pagination-icon" src="/static/pic/base/catalog/paginat.svg" alt="">
+                <div class="catalog_pagination-line"></div>
+
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer_container ">
+            <div class="footer_content wrapper">
+                <a href="/" class="footer_logo">
+                    <img class="footer_logo-icon" src="/static/pic/base/footer/logo.svg" alt="логотип">
+                </a>
+                <div class="footer_content-text">
+                    <h3 class="footer_content-title">Справка</h3>
+                    <div class="footer_block-text">
+                        <a class="footer_text" href="/"><p>Поддержка</p></a>
+                        <a class="footer_text" href="/"><p>Тех. поддержка</p></a>
+                        <a class="footer_text" href="/"><p>Документация по безопасности</p></a>
+                        <a class="footer_text" href="/"><p>Юридическая информация</p></a>
+                    </div>
+                </div>
+                <div class="footer_content-text">
+                    <h3 class="footer_content-title">Навигация</h3>
+                    <div class="footer_block-text">
+                        <a class="footer_text" href="#"><p>Главная</p></a>
+                        <a class="footer_text" href="#"><p>Каталог</p></a>
+                    </div>
+                </div>
+                <div class="footer_btn-block">
+                    <button class="btn btn--white">Зарегистрироваться</button>
+                    <div class="lang">
+                        <div class="lang_block lang_block--white">
+                            <p class="lang_selector lang_selector--white">RU</p>
+                            <div class="lang_arrow lang_arrow--white"></div>
+                        </div>
+                    </div>
+                    <div class="footer_social">
+                        <div class="footer_social-block">
+                            <img class="footer_social-icon" src="/static/pic/base/footer/icon-vkontakte.svg" alt="вконтакте" />
+                        </div>
+                        <div class="footer_social-block">
+                            <img class="footer_social-icon" src="/static/pic/base/footer/icon-pinterest.svg" alt="пинтерест" />
+                        </div>
+                        <div class="footer_social-block">
+                            <img class="footer_social-icon" src="/static/pic/base/footer/icon-OK.svg" alt="одноклассники" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_politic">
+                <a href="/" class="footer_politic-text" ><p>Уведомление об авторских правах</p></a>
+                <a href="/" class="footer_politic-text"><p>Политика использования файлов cookie</p></a>
+                <a href="/" class="footer_politic-text"><p>Политика конфиденциальности</p></a>
+                <a href="/" class="footer_politic-text"><p>Условия использования</p></a>
+            </div>
+        </div>
+        <div class="footer_company">
+            <p class="footer_company-text">Copyright &copy;”ЭльфийскийРосник” 2025 Все права защищены.</p>
+        </div>
+        <p class="footer_decor">Эльфийский росник</p>
+    </footer>
 </body>
 </html>

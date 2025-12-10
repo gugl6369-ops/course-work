@@ -1,0 +1,38 @@
+.tag{
+    display: flex;
+    padding: 3px 30px;
+    border: 3px solid rgba(0, 0, 0, .6);
+    color: var(--black);
+    font-family: 'Kurale';
+    font-size: 1.3rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, .3);
+    cursor: pointer;
+}
+
+.tag--active{
+    background-color: rgba(193, 220, 201, 1);
+    border: 3px solid rgba(161, 181, 167, 1);
+    color: rgba(30, 63, 58, 1);
+}
+.tag--deactive{
+    position: relative;
+    background-color: rgba(217, 151, 151, 0.4);
+    border: 3px solid rgba(236, 137, 137, 1);
+    color: var(--black);
+}
+.tag--deactive::before{
+    content: '';
+    position: absolute;
+    width: 95%;
+    height: 3px;
+    background-color: rgba(236, 137, 137, 1);
+    transform: rotate(10deg);
+}
+
+.tag--green{
+    color: var(--lightGreen);
+    border: 1px solid var(--lightGreen);
+}
