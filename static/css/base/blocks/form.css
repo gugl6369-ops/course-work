@@ -1,0 +1,37 @@
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.form_content{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.form_label{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Kablammo';
+    font-size: 2rem;
+    color: var(--darkGreen);
+}
+.form_input{
+    padding: 7px 20px;
+    border: 3px solid var(--darkGreen);
+    font-size: 1.3rem;
+    font-family: 'Kurale';
+    border-radius: 20px;
+}
+.form_input:focus{
+    outline: none;
+}
+.form_button{
+    width: 100%;
+    background-color: var(--lightBlue);
+    color: var(--darkGreen)
+}
+.form_button:hover{
+    background-color: rgba(174, 214, 222, 0.37);
+}
+.form_button:active{
+    background-color: rgb(127, 180, 191);
+}

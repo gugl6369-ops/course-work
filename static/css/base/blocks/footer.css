@@ -111,6 +111,17 @@
         display: none;
     }
 }
+@media (max-width: 1100px ) {
+    .footer_logo{
+        width: 100px;
+        height: 100px;
+    }
+    .footer_logo-icon{
+        width: 100px;
+        height: 100px;
+    }
+    
+}
 @media (max-width:800px) {
     .footer_content{
         display: flex;
@@ -126,5 +137,10 @@
     }
     .wrapper{
         width: 100%;
+    }
+}
+@media (max-width: 460px ) {
+    .footer_social-block{
+        padding: 5px;
     }
 }

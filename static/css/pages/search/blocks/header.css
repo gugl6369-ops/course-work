@@ -33,9 +33,6 @@
 }
 
 @media (max-width: 600px) {
-    .header_search-label{
-
-    }
     .header_search-btn{
         display: none;
     }
