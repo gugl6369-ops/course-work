@@ -1,0 +1,35 @@
+.subheading{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 70px;
+}
+.subheading_tags{
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.subheading_footnote{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid var(--black);
+    background-color: rgba(161, 181, 167, 0.2);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.subheading_footnote-title{
+    font-family: 'Kurale';
+    font-weight: normal;
+    font-size: 2rem;
+    color: var(--darkGreen);
+}
+.subheading_footnote-subtitle{
+    font-family: 'Kurale';
+    font-weight: normal;
+    font-size: 1.7rem;
+    color: var(--darkGreen);
+    text-align: center;
+
+}

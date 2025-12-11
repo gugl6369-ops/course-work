@@ -1,0 +1,108 @@
+.plant-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+.plant-info_content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.plant-info_content::before{
+    content: '';
+    position: absolute;
+    background-image: url(../../../../pic/plantInfo/decore-blue.png);
+    background-repeat: no-repeat;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+.plant-info_title{
+    font-family: 'kablammo';
+    font-weight: normal;
+    font-size: 5rem;
+    color: var(--darkGreen);
+}
+.plant-info_subtitle{
+    font-family: 'Kurale';
+    font-weight: 400;
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+}
+.plant-info_content-text{
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+.plant-info_card-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: end;
+}
+.plant-info_card{
+    border-radius: 10px;
+    padding: 11px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    opacity: .8;
+    background-color: var(--darkGreen);
+    cursor: pointer;
+}
+.plant-info_card--active{
+    background-color: var(--lightBlue);
+    opacity: 1;
+}
+.plant-info_card--deactive{
+    opacity: .7;
+}
+.plant-info_card-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 95px;
+    padding: 5px;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+.plant-info_card-img{
+    width: 100%;
+    height: 100%;
+}
+.plant-info_card-title{
+    font-family: 'Kurale';
+    font-size: 1.5rem;
+   color: var(--white);
+   max-width: 200px;
+}
+.plant-info_card-title--active{
+    color: var(--darkGreen);
+}
+
+@media (max-width: 1600px) {
+    .plant-info{
+        flex-direction: column;
+    }
+    .plant-info_content{
+        flex-direction: column;
+    }
+}
+@media (max-width: 1400px) {
+    .plant-info_content::before{
+        display: none;
+    }
+    .plant-info_content-text{
+        max-width: none;
+    }
+}
+
+@media (max-width:550px) {
+    .plant-info_plant-img{
+        width: 100%;
+    }
+}

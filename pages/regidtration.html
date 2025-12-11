@@ -10,7 +10,7 @@
 <body>
     <header class="header">
         <div class="header_block-logo">
-            <img class="header_logo" src="/static/pic/base/header/logo.svg" alt="Логотип">
+            <a href="index.html"><img class="header_logo" src="/static/pic/base/header/logo.svg" alt="Логотип"></a>
         </div>
         <nav class="navigation">
             <div class="navigation_block-menu">
@@ -36,22 +36,22 @@
     <main class="main">
 
 
-        <section class="login wrapper">
+        <section class="registration wrapper">
             <div class="decoration-block">
                 <div class="decoration-block_back">
-                    <div class="decoration-block_block">
+                    <div class="decoration-block_block decoration-block_block--small">
                         <img class="decoration-block_plant" src="/static/pic/base/card/gras.png" alt="растение">
                         <div class="decoration-block_decor"></div>
                     </div>
                 </div>
             </div>
-            <div class="login_content">
-                <h1 class="login_title">
-                    и снова Привет! 
-                    рады тебя видеть :)
+            <div class="registration_content">
+                <h1 class="registration_title">
+                    <span> Привет!</span>
+                    Рады тебя приветсвовать :)
                 </h1>
                 <div class="authorization">
-                    <div class="authorization-block">
+                    <div class="authorization_block">
                         <a class="btn authorization-link" href="/"> 
                             <img class="authorization-icon" src="../static/pic/base/footer/icon-vkontakte.svg" alt="вконтакте">
                             <div class="authorization-text-block">
@@ -79,15 +79,31 @@
                 </div>
                 <form class="form">
                     <div class="form_content">
-                        <label class="form_label">
-                            Почта
-                            <input class="form_input" type="email" required>
+                        <div class="form_block">
+                            <label class="form_label">
+                                Имя
+                                <input class="form_input" type="text" required>
+                            </label>
+                            <label class="form_label">
+                                Почта
+                                <input class="form_input" type="email" required>
+                            </label>
+                        </div>
+                        <div class="form_block">
+                            <label class="form_label">
+                                Пароль
+                                <input class="form_input" type="password" required>
+                            </label>
+                            <label class="form_label">
+                                Повторите пароль
+                                <input class="form_input" type="password" required>
+                            </label>
+                        </div>
+                        <label class="form_label-checkbox">
+                            <input class="form_input-checkbox" type="checkbox">
+                            Я соглашаюсь с <a class="form_link" href="/">Политикой конфинденциальности</a> и <a class="form_link" href="/">Условиями пользования</a>
                         </label>
-                        <label class="form_label">
-                            Пароль
-                            <input class="form_input" type="password" required>
-                        </label>
-                        <button class="btn form_button" type="submit">Войти</button>
+                        <button class="btn form_button" type="submit">Зарегистрироваться</button>
                     </div>
                 </form>
             </div>

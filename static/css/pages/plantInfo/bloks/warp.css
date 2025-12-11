@@ -1,0 +1,46 @@
+.warp{
+    width: 100%;
+    background-color: rgba(248, 248, 248, 1);
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+.warp_header{
+    display: flex;
+    justify-content: space-between;
+}
+.warp_header-block{
+    display: flex;
+    align-items: end;
+    gap: 50px;
+}
+.warp_header-link-icon{
+    width: 25px;
+    height: 25px;
+}
+.warp_header-link{
+    font-family: 'Kurale';
+    font-size: 1.5rem;
+    color: var(--darkGreen);
+}
+.warp_header-link-block{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.warp_header-title{
+    font-family: 'Kurale';
+    font-size: 2rem;
+    background-image: linear-gradient(transparent 30% ,var(--lightBlue) 50%, transparent 80%);
+    background-position: 10px 10px;
+    background-size: 100% 30px;
+    background-repeat: no-repeat;
+}
+
+@media (max-width:550px) {
+    .warp_header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

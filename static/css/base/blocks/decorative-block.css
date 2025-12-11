@@ -55,6 +55,10 @@
     bottom: -5%;
 
 }
+.decoration-block_block--small{
+    top: 0;
+}
+
 @media (max-width: 1700px ) {
     .decoration-block{
         display: none;

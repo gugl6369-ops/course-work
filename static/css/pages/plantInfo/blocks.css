@@ -1,0 +1,20 @@
+@import url('./bloks/plant-info.css');
+@import url('./bloks/warp.css');
+@import url('./bloks/subheading.css');
+@import url('./bloks/feature.css');
+
+@media (max-width: 650px) {
+    html{
+        font-size: 12px;
+    }
+}
+@media (max-width: 460px) {
+    html{
+        font-size: 10px;
+    }
+}
+@media (max-width: 400px) {
+    html{
+        font-size: 8px;
+    }
+}
