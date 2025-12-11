@@ -1,0 +1,131 @@
+.hero{
+    width: 85%;
+}
+
+.hero_feed{
+    
+}
+.hero_title{
+    font-family: 'Kablammo';
+    font-size: 2.5rem;
+    font-weight: normal;
+    color: var(--darkGreen);
+}
+.hero_banner-title{
+    font-family: 'Kablammo';
+    font-size: 3rem;
+    color: var(--white);
+    font-weight: normal;
+    max-width: 520px;
+}
+.hero_banner-text{
+    font-family: 'Kurale';
+    font-size: 2rem;
+    color: var(--white);
+    line-height: 1.5;
+    max-width: 520px;
+}
+.hero_content{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+.hero_banner{
+    position: relative;
+    background-image: url("../../../../pic/main/hero/back.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 100px;
+    border-radius: 20px;
+}
+.hero_banner::before{
+    content: "";
+    width: 40%;
+    height: 100%;
+    max-width: 390px;
+    max-height: 600px;
+    position: absolute;
+    background-image: url("../../../../pic/main/hero/plant.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    bottom: 0;
+    right: 5%;
+}
+.hero_banner-block{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.hero_feed-card-avatar{
+    border-radius: 100%;
+}
+.hero_feed-card-title{
+    position: relative;
+    font-family: "Kablammo";
+    font-size: 2.3rem;
+    font-weight: normal;
+    color: var(--white);
+}
+.hero_feed-card-title::before{
+    content: "OFFERING";
+    position: absolute;
+    font-size: 1.5rem;
+    right: 0;
+    left: 0;
+    top: 60%;
+    text-align: center;
+    color: var(--black);
+}
+.hero_feed-card-text{
+    font-size: 1rem;
+    font-family: 'Kurale';
+}
+.hero_feed-card{
+    position: relative;
+    background-color: var(--tagFlower);
+    padding: 20px 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    overflow: hidden;
+}
+.hero_feed-card::before{
+    position: absolute;
+    content: "";
+    background-image: url("../../../../pic/base/card/tea.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 150%;
+    height: 150%;
+    left: 10%;
+    bottom: -10%;
+}
+.hero_feed-card-line{
+    width: 3px;
+    background-color: var(--white);
+}
+.hero_feed-card-block{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.hero_feed-card-subblock{
+    display: flex;
+    gap: 10px;
+}
+.hero_feed-card-header{
+    display: flex;
+    gap: 10px;
+}
+.hero_feed-card-subtitle{
+    font-family: 'Kurale';
+    font-size: 1.5rem;
+}
+.hero_feed-card-text{
+    font-family: 'Kurale';
+    font-size: 1rem;
+}
