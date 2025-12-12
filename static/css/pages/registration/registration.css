@@ -1,7 +1,36 @@
 .registration{
-     position: relative;
+    position: relative;
     padding: 130px 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 100px;
+}
+.registration_decoration{
+    position: relative;
+    height: 100%;
+}
+.registration_content{
+    display: flex;
+    flex-direction: column;
+    gap: 50px
+}
+.registration_title{
+    font-family: 'Kablammo';
+    font-size: 3rem;
+    color: var(--darkGreen);
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width: 1700px) {
+    .registration{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width: 700px) {
+    .wrapper{
+        width: 90%;
+    }
 }
