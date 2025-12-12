@@ -1,9 +1,15 @@
 .hero{
-    width: 85%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .hero_feed{
-    
+    display: grid;
+    grid-template-rows: 3fr 2fr;
+    width: 100%;
+    gap: 40px;
 }
 .hero_title{
     font-family: 'Kablammo';
@@ -38,6 +44,7 @@
     background-size: cover;
     padding: 80px 100px;
     border-radius: 20px;
+    overflow: hidden;
 }
 .hero_banner::before{
     content: "";
@@ -46,11 +53,11 @@
     max-width: 390px;
     max-height: 600px;
     position: absolute;
-    background-image: url("../../../../pic/main/hero/plant.png");
+    background-image: url("../../../../pic/base/card/grass.png");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
-    bottom: 0;
+    top: 10%;
     right: 5%;
 }
 .hero_banner-block{
@@ -128,4 +135,83 @@
 .hero_feed-card-text{
     font-family: 'Kurale';
     font-size: 1rem;
+}
+.hero_feed-block{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 100%;
+    gap: 30px;
+}
+.hero_feed-news{
+    width: 100%;
+    display: flex;
+    background-color: var(--darkGreen);
+    border-radius: 20px;
+    padding: 20px 30px;
+    align-items: center;
+}
+.hero_feed-news-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.hero_feed-news-title{
+    color: var(--white);
+    font-family: 'Kablammo';
+    font-size: 1.5rem;
+}
+.hero_feed-news-version{
+    color: var(--white);
+    font-family: 'Kablammo';
+    font-size: 2rem;
+}
+.hero_feed-news-line{
+    width: 100%;
+    height: 2px;
+    background-color: var(--white);
+}
+.hero_feed-news-block{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+.hero_feed-constructor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid var(--darkGreen);
+    border-radius: 20px;
+}
+
+
+@media (max-width: 1350px) {
+    .hero_banner::before{
+        display: none;
+    }
+    .hero_feed-card-title{
+        display: none;
+    }
+    .hero_feed-constructor{
+        display: none;
+    }
+    .hero_feed-block{
+        display: flex;
+    }
+}
+@media (max-width: 1100px) {
+    .hero_content{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 450px) {
+    .hero_banner{
+        padding: 15px;
+    }    
 }
